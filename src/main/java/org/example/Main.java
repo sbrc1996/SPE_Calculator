@@ -6,6 +6,7 @@ public class Main {
     public static void main(String[] args)
     {
         System.out.println("Welcome to Mini Calculator!!");
+        Calculator cc = new Calculator();
         do{
             System.out.println("Enter 1. For Addition!");
             System.out.println("Enter 2. For Subtraction!");
@@ -17,7 +18,6 @@ public class Main {
             int choice = sc.nextInt();
             int first;
             int second;
-            int result;
             switch(choice)
             {
                 case 1:
@@ -25,24 +25,21 @@ public class Main {
                     first = sc.nextInt();
                     System.out.println("Enter the second number");
                     second = sc.nextInt();
-                    result = first + second;
-                    System.out.println("The answer for addition of "+first+" and "+second+" is "+result);
+                    System.out.println("The answer for addition of "+first+" and "+second+" is "+cc.add(first,second));
                     break;
                 case 2:
                     System.out.println("Enter the first number");
                     first = sc.nextInt();
                     System.out.println("Enter the second number");
                     second = sc.nextInt();
-                    result = first - second;
-                    System.out.println("The answer for subtraction of "+first+" and "+second+" is "+result);
+                    System.out.println("The answer for subtraction of "+first+" and "+second+" is "+cc.sub(first,second));
                     break;
                 case 3:
                     System.out.println("Enter the first number");
                     first = sc.nextInt();
                     System.out.println("Enter the second number");
                     second = sc.nextInt();
-                    result = first * second;
-                    System.out.println("The answer for multiplication of "+first+" and "+second+" is "+result);
+                    System.out.println("The answer for multiplication of "+first+" and "+second+" is "+cc.mul(first,second));
                     break;
                 case 4:
                     System.out.println("Thanks for visiting, see you soon!!!");
