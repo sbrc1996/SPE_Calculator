@@ -24,7 +24,11 @@ public class Main {
             System.out.println("Enter 1. For Addition!");
             System.out.println("Enter 2. For Subtraction!");
             System.out.println("Enter 3. For Multiply!");
-            System.out.println("Enter 4. To Exit from the calculator!");
+            System.out.println("Enter 4. For Square Root!");
+            System.out.println("Enter 5. For Factorial!");
+            System.out.println("Enter 6. For Natural Logarithm!");
+            System.out.println("Enter 7. For Power Function!");
+            System.out.println("Enter 8. To Exit from the calculator!");
             System.out.println("Enter your choice:- ");
 
             Scanner sc = new Scanner(System.in);
@@ -61,6 +65,45 @@ public class Main {
                     System.out.println("The answer for multiplication of "+first+" and "+second+" is "+cc.mul(first,second));
                     break;
                 case 4:
+                    logger.debug("\n Control with the Square Root function....");
+
+                    System.out.println("Enter the number");
+                    first = sc.nextInt();
+                    if(first < 0)
+                        System.out.println("\n Square Root not possible..");
+                    else
+                        System.out.println("The answer for square Root of "+first+" is "+cc.sqrRoot(first));
+                    break;
+                case 5:
+                    logger.debug("\n Control with the Factorial function....");
+
+                    System.out.println("Enter the number");
+                    first = sc.nextInt();
+                    if(first < 0)
+                        System.out.println("\n Factorial of a negative is not possible..");
+                    else
+                        System.out.println("The answer for square Root of "+first+" is "+cc.fact(first));
+                    break;
+                case 6:
+                    logger.debug("\n Control with the Natural Logarithm log(base e) function....");
+
+                    System.out.println("Enter the number");
+                    first = sc.nextInt();
+                    if(first < 0)
+                        System.out.println("\n Natural Log of negative number not possible..");
+                    else
+                        System.out.println("The answer for Natural Logarithm log(base e) of "+first+" is "+cc.natLog(first));
+                    break;
+                case 7:
+                    logger.debug("\n Control with the Power function....");
+
+                    System.out.println("Enter the number");
+                    first = sc.nextInt();
+                    System.out.println("Enter the power");
+                    second = sc.nextInt();
+                    System.out.println("The answer for Power of "+first+"^"+second+" is "+cc.pow(first,second));
+                    break;
+                case 8:
                     logger.debug("\n See you later...");
 
                     System.out.println("Thanks for visiting, see you soon!!!");
