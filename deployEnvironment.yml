@@ -12,4 +12,4 @@
       shell: docker pull sbrc1996/speminiproject
 
     - name: running container
-      shell: docker run -it -d sbrc1996/speminiproject
+      shell: docker create -it --name brcKaContainer sbrc1996/speminiproject
