@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class Main {
 
-    private static Logger logger = LogManager.getLogger(Main.class);
+    private static final Logger logger = LogManager.getLogger(Main.class);
 
     public static void main(String[] args)
     {
