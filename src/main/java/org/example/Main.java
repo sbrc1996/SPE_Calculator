@@ -11,7 +11,7 @@ public class Main {
 
     public static void main(String[] args)
     {
-        logger.info("\n Start of Logging...");
+        logger.info("\n Start of Logging.....");
         logger.error("\n This is an test error message...");
         logger.fatal("\n This is an test fatal massage...");
 
