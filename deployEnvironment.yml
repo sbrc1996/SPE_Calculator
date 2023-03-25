@@ -11,6 +11,6 @@
     - name: pull docker image
       shell: docker pull sbrc1996/speminiproject
 
-    - name: running container
-      shell: docker create -it sbrc1996/speminiproject
+#    - name: running container
+#      shell: docker create -it sbrc1996/speminiproject
 
