@@ -82,7 +82,7 @@ public class Main {
                     if(first < 0)
                         System.out.println("\n Factorial of a negative is not possible..");
                     else
-                        System.out.println("The answer for square Root of "+first+" is "+cc.fact(first));
+                        System.out.println("The answer for Factorial of "+first+" is "+cc.fact(first));
                     break;
                 case 6:
                     logger.debug("\n Control with the Natural Logarithm log(base e) function....");
