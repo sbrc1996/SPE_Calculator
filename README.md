@@ -7,6 +7,7 @@ Steps to Run the Program..
 
 0. Provide sudo priviledges to docker daemon program: `sudo chmod 666 /var/run/docker.sock`
 1. Run ngrok: `ngrok http 8080` (since 8080 is the port number for Jenkins)
+   ![img.png](img.png)
 2. Copy the https ip address generated from the ngrok and copy it to GitHub Webhooks (Payload URL) and Configure Jenkins (Jenkins URL)
 3. In github webhook payload URL copy it with extra tag of /github-webhook/ ---> Https Ip address/github-webhook/   e.g. http://f39e-103-156-19-229.ngrok.io/github-webhook/
 4. Push some changes to Github from the IDE, and a build will start.
