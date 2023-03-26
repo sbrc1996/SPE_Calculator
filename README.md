@@ -13,15 +13,15 @@ Steps to Run the Program..
 5. Before running a build make sure the no docker images are running.
 6. login as Ansible user: `sudo su ansible_usr`
 7. check the created docker images: `docker images`
-    ![img.png](img.png)
+    ![img.png](Images/img.png)
 8. run the latest created docker image: `docker run -it sbrc1996/speminiproject`
-    ![img_1.png](img_1.png)
+    ![img_1.png](Images/img_1.png)
 9. Start the container:  `docker start <Container_Id>`
-    ![img_2.png](img_2.png)
+    ![img_2.png](Images/img_2.png)
 10. Go inside the container and check the contents: `docker exec -it 10a7 /bin/bash`
-    ![img_3.png](img_3.png)
+    ![img_3.png](Images/img_3.png)
 11. Copy the log from the Docker Container to the Host desktop using: `sudo docker cp great_elbakyan:CalculatorLogs.log /home/subham/Desktop/`
-    ![img_5.png](img_5.png)
+    ![img_5.png](Images/img_5.png)
 12. Upload the file to the online cloud [ELK](https://cloud.elastic.co/home) stack ..
 13. Done!!!
 
